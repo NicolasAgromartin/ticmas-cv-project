@@ -1,0 +1,54 @@
+/* fuerte importada de google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap');
+
+*{
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
+
+}
+
+body {
+  min-height: 100vh; width: 100%; 
+  display: flex; flex-direction: column;
+  justify-content: flex-start; align-items: center;
+  background: rgb(207, 219, 224);
+}
+
+body::after {
+  content: '';
+  position: absolute; top: 0; left: 0; z-index: -1;
+
+  background: #900;
+
+  clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 100% 100%, 25% 100%, 0% 60%, 0 0);
+
+}
+
+
+a {
+  text-decoration: none;
+  color: #000;
+  transition: .1s;
+  -webkit-user-select: none; user-select: none;
+}
+
+a:active {
+  filter: brightness(1.5);
+}
+
+button, input,textarea {
+  border: none; 
+  outline: none;    
+  background: none;
+  transition: .1s;
+} 
+button {
+  -webkit-user-select: none; user-select: none;
+  cursor: pointer;
+}
+
+button:active{
+  transform: scale(1.1);
+}

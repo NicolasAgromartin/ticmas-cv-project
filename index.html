@@ -1,47 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- javascript -->
   <script src="./javascript/getUser.js" defer></script>
+  <!-- css -->
   <link rel="stylesheet" href="./style/style.css" >
-  <script src="https://kit.fontawesome.com/fe0352278b.js" crossorigin="anonymous" ></script>
+  <link rel="stylesheet" href="./style/normalize.css" >
+  <link rel="stylesheet" href="./style/fonts.css" >
+  <!-- meta tags -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- title -->
   <title> Ticmas Project CV </title>
 </head>
 <body>
-  <div class="curriculum">
 
-    <div class="head">
-      <img src="" alt="" class="head-image">
+  <nav class="header">
+    <a href="#Home"> Inicio </a>
+    <a href="#About"> Acerca de mi</a>
+    <a href="#Contact"> Contacto </a>
+  </nav>
+
+  <section class="home-section" id="Home">
+    <span class="image-container">
+      <img src="./images/foto-cv.png" alt="">
+    </span>
+
+    <div class="presentation">
+      <h1> Gene Porter </h1>
+      <h2> Desarrollador Front-End </h2>
+      <p>
+        Desde siempre apasionado por las computadoras, me adentre por mi propia cuenta en el desarrollo web y termine encantado con el Front-End, especificamente trabajar la UX/UI.
+      </p>
+      <a href="#About">
+        <button class="action-button"> Conoceme mejor </button>
+      </a>
     </div>
+  </section>
 
-    <div class="user-data">  
-      <h1 class="user-data-name"></h1>
-      <div class="user-data-content">
-        <h3>About Me </h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae cupiditate voluptas distinctio ipsam, suscipit iusto! Minima beatae quod aperiam possimus, neque laboriosam consectetur dignissimos facere ullam veniam at totam est.</p>
-      </div>
-      <div class="user-data-content">
-        <h3>Experience</h3>
-        <p> <strong> Experience 1 : </strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur magni a quas magnam quam ipsam nulla esse autem deserunt minima sequi. </p>
-        <p> <strong> Experience 2 : </strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur magni a quas magnam quam ipsam nulla esse autem deserunt minima sequi. </p>
-      </div>
-      <span class="user-data-controlls">
-          <img src="./icons/city.svg" alt="user" class="icon" id="LocationBtn">
-          <img src="./icons/phone.svg" alt="user" class="icon" id="PhoneBtn">
-          <img src="./icons/envelope.svg" alt="user" class="icon" id="MailBtn">
+  <section class="about-section" id="About">
+    <h1> Acerca de mi </h1>
+    <h3> Conocimientos y Experiencias </h3>
+    <div class="about-section-techs">
+      <h2> Tecnologías </h2>
+      <span>
+        <img src="./icons/html.svg" alt="" class="tech-icon">
+        <img src="./icons/css.svg" alt="" class="tech-icon">
+        <img src="./icons/javascript.svg" alt="" class="tech-icon">
       </span>
-      <div class="user-data-information">
+    </div>
+    <div class="about-section-experience">
+      <h2> Experiencias </h2>
+      <span class="experience">
+        <h3> Programador Web </h3>
+        <p> Desarrollo de páginas web para clientes particulares </p>
+        <p> <b> 2020 - 2022 </b> </p>
+      </span>
+      <span class="experience">
+        <h3> Diseñador Web </h3>
+        <p> Encargado del diseño de páginas web en un equipo de trabajo </p>
+        <p> <b>  2022 - Actualidad  </b> </p>
+      </span>
 
+    </div>
+
+  </section>
+
+  <section class="contact-section" id="Contact">
+    <h1> Contactame </h1>  
+
+    <form id="form">
+      <input type="email" placeholder="E-Mail">
+      <input type="text" placeholder="Name">
+      <textarea name="message" placeholder="Let me a message"></textarea>
+      <button type="submit" > Enviar </button>
+    </form>
+    
+    <div class="dats">
+      <div>
+        <span>
+          <img src="./icons/city.svg" alt="user" class="icon">
+          <p> Ubicación </p>
+        </span>
+        <div class="user-data-information-location"> 5011 Hickory Creek Dr </div>
+      </div>
+      <div>
+        <span>
+          <img src="./icons/phone.svg" alt="user" class="icon">
+          <p> Telefono </p>
+        </span>
+        <div class="user-data-information-phone">(841) 332-8970 </div>
+      </div>
+      <div>
+        <span>
+          <img src="./icons/envelope.svg" alt="user" class="icon">
+          <p> E-Mail </p>
+        </span>
+        <div class="user-data-information-email">gene.porter@example.com </div>
       </div>
     </div>
 
-  </div>
-  <footer> 
-    <p>Site made by Nicolas Agromartin</p> 
-    <a href="https://github.com/NicolasAgromartin/ticmas-cv-project.git">
-      <img src="./icons/github.svg" alt="github" class="icon">
-    </a>
-  </footer>
+  </section>
 </body>
 </html>
